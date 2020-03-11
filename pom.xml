@@ -72,11 +72,11 @@
 <!--            <groupId>com.okta.spring</groupId>-->
 <!--            <artifactId>okta-spring-boot-starter</artifactId>-->
 <!--        </dependency>-->
-        <dependency>
-            <groupId>com.okta.spring</groupId>
-            <artifactId>okta-spring-boot-starter</artifactId>
-            <version>1.4.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.okta.spring</groupId>-->
+<!--            <artifactId>okta-spring-boot-starter</artifactId>-->
+<!--            <version>1.4.0</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

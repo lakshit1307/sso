@@ -8,4 +8,6 @@ import lombok.Setter;
 @Setter
 public class LoginResponse extends BaseResponse {
 
+    private String token;
+
 }

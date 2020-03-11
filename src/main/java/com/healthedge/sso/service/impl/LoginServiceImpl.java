@@ -25,16 +25,17 @@ public class LoginServiceImpl implements LoginService {
         String response=restTemplate.postForObject(url, loginRequest, String.class);
 
         LoginResponse loginResponse=new LoginResponse();
-        loginResponse.setStatus(getResponse(response));
+        loginResponse.setStatus(getResponse(response, "status").toString());
+        loginResponse.setToken(getResponse(response, "sessionToken").toString());
         LOGGER.trace("Login Request processed for " + loginRequest.getUsername());
         return loginResponse;
     }
 
-    private String getResponse(String response){
+    private Object getResponse(String response, String key){
         try{
             JSONObject jsonObject = new JSONObject(response);
-            if(jsonObject.has("status")){
-                return "Success";
+            if(jsonObject.has(key)){
+                return jsonObject.get(key);
             }
         }
         catch (Exception e){
