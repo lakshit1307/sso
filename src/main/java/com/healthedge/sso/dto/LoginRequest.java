@@ -24,10 +24,5 @@ public class LoginRequest {
     @NotBlank(message = ErrorCodes.USERNAME_REQUIRED)
     private String password;
 
-    @ApiModelProperty(value = "This is the email", required = false)
-    @NotNull(message = ErrorCodes.USERNAME_REQUIRED)
-    @NotBlank(message = ErrorCodes.USERNAME_REQUIRED)
-    private String email;
-
 
 }

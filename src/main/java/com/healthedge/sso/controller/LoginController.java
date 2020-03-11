@@ -36,7 +36,6 @@ public class LoginController {
         LoginResponse loginResponse=new LoginResponse();
         loginResponse.setMessage("You are logged in");
         loginResponse.setStatus("Hell Yeah!!!");
-        loginResponse.setToken("Rand token");
         return new ResponseEntity(loginResponse, HttpStatus.OK);
     }
 

@@ -8,7 +8,4 @@ import lombok.Setter;
 @Setter
 public class LoginResponse extends BaseResponse {
 
-    @ApiModelProperty(value = "Token returned for succesful login")
-    private String token;
-
 }

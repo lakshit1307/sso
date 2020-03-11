@@ -1,6 +1,5 @@
 package com.healthedge.sso.common.exception.handler;
 
-import com.healthedge.sso.common.dto.Response;
 import com.healthedge.sso.common.exception.BusinessException;
 import com.healthedge.sso.common.exception.ExceptionResourceBundle;
 import org.slf4j.Logger;
